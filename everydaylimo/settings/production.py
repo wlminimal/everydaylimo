@@ -1,4 +1,5 @@
 from .base import *
+import environ
 
 DEBUG = False
 
@@ -11,4 +12,7 @@ except ImportError:
 # import django_heroku
 # django_heroku.settings(locals())
 
+env = environ.Env()
+
 ALLOWED_HOSTS = ['floating-mesa-82197.herokuapp.com'] 
+SECRET_KEY = env('SECRET_KEY')
