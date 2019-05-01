@@ -14,5 +14,5 @@ except ImportError:
 
 env = environ.Env()
 
-ALLOWED_HOSTS = ['floating-mesa-82197.herokuapp.com'] 
+ALLOWED_HOSTS = ['floating-mesa-82197.herokuapp.com', 'everydaylimola.com', 'www.everydaylimola.com'] 
 SECRET_KEY = env('SECRET_KEY')
